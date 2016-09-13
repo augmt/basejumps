@@ -27,14 +27,31 @@ basejumps.forEach((basejump) => {
   router.get(reBasejump, async (ctx) => {
     const path = ctx.url.replace(`/${basejump}`, '');
     try {
-      ctx.body = await rp({
-        headers: ctx.request.header,
+      const response = await rp({
+        followRedirect: false,
+        headers: {
+          'X-Forwarded-Path': `/${basejump}`,
+          ...ctx.request.header
+        },
         method: ctx.request.method,
+        resolveWithFullResponse: true,
+        simple: false,
         url: `http://localhost:${port}${path}`
       });
-      ctx.type = 'json';
-    } catch(err) {
-      ctx.throw(err);
+
+      if (response.statusCode < 200) {
+        // pass
+      } else if (response.statusCode < 300) {
+        ctx.body = response.body;
+        ctx.type = 'json';
+      } else if (response.statusCode < 400) {
+        ctx.redirect(response.headers.location);
+        ctx.status = response.statusCode;
+      } else {
+        ctx.throw(response.body, response.statusCode);
+      }
+    } catch (err) {
+      ctx.throw(err.statusCode, err.message);
     }
   });
 });
