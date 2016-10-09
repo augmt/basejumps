@@ -1,0 +1,36 @@
+{
+  "name": "augmt-fcc-basejumps",
+  "version": "0.2.0",
+  "description": "FreeCodeCamp Basejumps",
+  "license": "MIT",
+  "author": {
+    "name": "Hector Garcia",
+    "email": "soseinhg3@gmail.com"
+  },
+  "main": "build/server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/augmt/fcc-basejumps.git"
+  },
+  "scripts": {
+    "build": "babel src -d build",
+    "start": "node build/server.js",
+    "start:dev": "nodemon -r dotenv/config -r babel-register src/server.js"
+  },
+  "dependencies": {
+    "@augmt/file-metadata-microservice": "0.2.6",
+    "@augmt/image-search-abstraction-layer": "0.2.6",
+    "@augmt/request-header-parser-microservice": "0.2.4",
+    "@augmt/timestamp-microservice": "0.2.4",
+    "@augmt/url-shortener-microservice": "0.2.7",
+    "http-proxy": "1.15.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.16.0",
+    "babel-register": "^6.16.3",
+    "dotenv": "^2.0.0",
+    "nodemon": "^1.10.2"
+  },
+  "private": true
+}
