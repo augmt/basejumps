@@ -38,30 +38,30 @@ run `npm start`.
 
 ## API Projects
 
-* [Timestamp Microservice][5]
-* [Request Header Parser Microservice][6]
-* [URL Shortener Microservice][7]
-* [Image Search Abstraction Layer][8]
-* [File Metadata Microservice][9]
+* [Timestamp Microservice][6]
+* [Request Header Parser Microservice][7]
+* [URL Shortener Microservice][8]
+* [Image Search Abstraction Layer][9]
+* [File Metadata Microservice][10]
 
-[5]: https://github.com/augmt/timestamp-microservice
-[6]: https://github.com/augmt/request-header-parser-microservice
-[7]: https://github.com/augmt/url-shortener-microservice
-[8]: https://github.com/augmt/image-search-abstraction-layer
-[9]: https://github.com/augmt/file-metadata-microservice
+[6]: https://github.com/augmt/timestamp-microservice
+[7]: https://github.com/augmt/request-header-parser-microservice
+[8]: https://github.com/augmt/url-shortener-microservice
+[9]: https://github.com/augmt/image-search-abstraction-layer
+[10]: https://github.com/augmt/file-metadata-microservice
 
 ## Dynamic Web Application Projects
 
 _Note_: May or may not be added at a later date.
 
-* [Voting App][10]
-* [Nightlife Coordination App][11]
-* [Chart the Stock Market][12]
-* [Manage a Book Trading Club][13]
-* [Pinterest Clone][14]
+* [Voting App][11]
+* [Nightlife Coordination App][12]
+* [Chart the Stock Market][13]
+* [Manage a Book Trading Club][14]
+* [Pinterest Clone][15]
 
-[10]: https://www.freecodecamp.org/challenges/build-a-voting-app
-[11]: https://www.freecodecamp.org/challenges/build-a-nightlife-coordination-app
-[12]: https://www.freecodecamp.org/challenges/chart-the-stock-market
-[13]: https://www.freecodecamp.org/challenges/manage-a-book-trading-club
-[14]: https://www.freecodecamp.org/challenges/build-a-pinterest-clone
+[11]: https://www.freecodecamp.org/challenges/build-a-voting-app
+[12]: https://www.freecodecamp.org/challenges/build-a-nightlife-coordination-app
+[13]: https://www.freecodecamp.org/challenges/chart-the-stock-market
+[14]: https://www.freecodecamp.org/challenges/manage-a-book-trading-club
+[15]: https://www.freecodecamp.org/challenges/build-a-pinterest-clone
