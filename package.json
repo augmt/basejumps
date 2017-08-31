@@ -18,7 +18,7 @@
     "url": "git+https://github.com/augmt/freecodecamp-basejumps.git"
   },
   "scripts": {
-    "start": "node -r dotenv/config server.js",
+    "start": "node server.js",
     "test": "tape \"test/**/*.js\""
   },
   "dependencies": {
